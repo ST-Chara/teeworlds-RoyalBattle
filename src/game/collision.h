@@ -22,6 +22,8 @@ public:
 		COLFLAG_SOLID=1,
 		COLFLAG_DEATH=2,
 		COLFLAG_NOHOOK=4,
+		int IsTile(int x, int y, int Type);
+		int IsTile(vec2 Pos, int Type) { return IsTile(Pos.x, Pos.y, Type); }
 	};
 
 	CCollision();
