@@ -365,7 +365,7 @@ void CGameContext::CheckPureTuning()
 		return;
 
 	if(	str_comp(m_pController->m_pGameType, "DM")==0 ||
-		str_comp(m_pController->m_pGameType, "TDM")==0 ||
+		str_comp(m_pController->m_pGameType, "RoyalFight")==0 ||
 		str_comp(m_pController->m_pGameType, "CTF")==0)
 	{
 		CTuningParams p;
