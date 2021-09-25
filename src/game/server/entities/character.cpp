@@ -514,6 +514,11 @@ void CCharacter::ResetInput()
 	m_LatestPrevInput = m_LatestInput = m_Input;
 }
 
+void CCharacter::HandleTiles()
+{
+
+}
+
 void CCharacter::Tick()
 {
 	if(m_pPlayer->m_ForceBalanced)
