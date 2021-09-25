@@ -516,7 +516,13 @@ void CCharacter::ResetInput()
 
 void CCharacter::HandleTiles()
 {
-
+if(GameServer()->Collision()->IsTile(m_Pos, TILE_MYTILE))
+{
+ if(Server()->Tick() % (1 * Server()->TickSpeed()) == 0)
+   {
+    GameServer()->SendBroadcast("              ~ wELcOmEE", m_pPlayer->GetCID());
+    }
+  }
 }
 
 void CCharacter::Tick()
